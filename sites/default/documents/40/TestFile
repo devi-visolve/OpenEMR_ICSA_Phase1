@@ -1,0 +1,22 @@
+controllers/C_Document.class.php
+library/classes/Document.class.php
+sql/3_2_0-to-4_0_0_upgrade.sql
+sql/database.sql
+templates/documents/general_upload.html
+templates/documents/general_view.html
+
+ patch --dry-run -p1 -i NIST_Security_SHA1/NIST_Security_MD5_to_SHA1_Patch.txt
+
+
+diff -Nur  demo/ICSA/sql/database.sql tony/sql/database.sql
+
+
+diff -Nur  demo/ICSA/sql/3_2_0-to-4_0_0_upgrade.sql tony/sql/3_2_0-to-4_0_0_upgrade.sql
+
+diff -Nur  demo/ICSA/library/classes/Document.class.php tony/library/classes/Document.class.php
+
+diff -Nur  demo/ICSA/controllers/C_Document.class.php tony/controllers/C_Document.class.php
+
+diff -Nur  demo/ICSA/templates/documents/general_view.html tony/templates/documents/general_view.html
+
+diff -Nur  demo/ICSA/templates/documents/general_upload.html tony/templates/documents/general_upload.html
